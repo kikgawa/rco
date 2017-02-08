@@ -1,0 +1,16 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "authors": [
+    "Minori Kikugawa"
+  ],
+  "description": "",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap":"~3.3.7",
+    "drawer": "blivesta/drawer#~2.4.0",
+    "jquery": "*",
+    "slick-carousel": "~1.5.8"
+  },
+  "devDependencies": {}
+}
