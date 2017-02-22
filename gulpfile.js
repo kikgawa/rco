@@ -22,9 +22,12 @@ var prettify = require('gulp-prettify');
 
 
 gulp.task('default', () => {
-  runSequence(['file_dest','clean','images','fonts','css_vender','css','js','jade','watch','browserSyncTask']);
+  runSequence(['file_dest','clean','images','fonts','css_vender','css','css_type_a','js','jade','watch','browserSyncTask']);
 });
 
+gulp.task('type_a', () => {
+  runSequence(['file_dest','clean','images','fonts','css_type_a','js','jade','watch','browserSyncTask']);
+});
 
 gulp.task('clean', () => {
   return del.sync(['dest']);
@@ -74,6 +77,26 @@ return gulp.src('./src/css/style.css')
   .pipe(gulp.dest('./dest/css'))
 });
 
+gulp.task('css_type_a', () => {
+  var processors = [
+    autoprefixer({browsers: ['last 2 version']}),
+    postcssNest(),
+    simpleMixin(),
+    simpleExtend(),
+    simpleVars(),
+    mqpacker,
+    csswring
+  ];
+return gulp.src('./src/css/style_type_a.css')
+  .pipe(cssimport({}))
+  .pipe(postcss(processors, {syntax: scss}))
+  .pipe(concat('style_type_a.css'))
+  .pipe(gulp.dest('./dest/css'))
+  .pipe(rename({suffix: '.min'}))
+  .pipe(nano())
+  .pipe(gulp.dest('./dest/css'))
+});
+
 gulp.task('images', () => {
   return gulp.src('src/img/**/*')
     .pipe(imagemin({progressive: true}))
@@ -114,7 +137,7 @@ gulp.task('clean', function() {
 
 
 gulp.task('watch', function() {
-  gulp.watch('./src/css/**/*.css', ['css']);
+  gulp.watch('./src/css/**/*.css', ['css','css_type_a']);
   gulp.watch('./src/images/**/*', ['images']);
   gulp.watch('./src/js/**/*.js', ['js']);
   gulp.watch('./src/templates/**/*.jade', ['jade']);

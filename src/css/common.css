@@ -293,3 +293,22 @@ select::-ms-expand {
   flex: 0 0 100%;
   max-width: 100%;
 }
+
+
+
+
+
+
+.layout01{
+  background:#fff;
+  section{
+    padding:70px 0;
+    h2{
+      margin-bottom:20px;
+    }
+    p{
+      margin-bottom:20px;
+    }
+    
+  }
+}

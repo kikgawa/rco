@@ -1,0 +1,56 @@
+/* ===============================================
+ * layout
+ * =============================================== */
+.l_row{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.l_row__main{
+  width:640px;
+}
+.l_row__side{
+  width:320px;
+}
+
+
+
+.keyvisual{
+  background:#000;
+  min-width:1px;
+  width:100%;
+  background-size:cover;
+  background-position:center top;
+  height:490px;
+}
+
+.title{
+  border-bottom:1px solid $border-color;
+  @simple-mixin-include font_bebas;
+  margin-bottom:25px;
+  .title__inner{
+    border-bottom:1px solid $brand-color;
+    color:$brand-color;
+    font-size:1.8rem;
+    display:inline-block;
+    margin-bottom:-1px;
+    padding-bottom:10px;
+  }
+}
+
+/* ===============================================
+ * section
+ * =============================================== */
+.sec{
+  margin-bottom:50px;
+  h2{
+    line-height:1.6;
+    font-size:2.4rem;
+    font-weight:bold;
+    margin-bottom:$mgb;
+  }
+  p,img{
+    margin-bottom:$mgb;
+    display:inline-block;
+  }
+}

@@ -4,6 +4,8 @@
 .global_header{
   font-size:1.2rem;
   .lang_row{
+    display:flex;
+    flex-wrap: nowrap;
     a{
       display:inline-block;
       background: #444;
@@ -57,11 +59,12 @@
 .global_header__top{
   color:#999;
   width:100%;
-  min-width:100%;
+  min-width:1060px;
   height:40px;
   background: #000;
   display:flex;
   align-items: center;
+  flex-wrap: nowrap;
   .global_header__inner{
     display:flex;
     justify-content: space-between;
@@ -77,7 +80,7 @@
 .global_header__main{
   background: #282828;
   padding:30px 0;
-  min-width:100%;
+  min-width:1060px;
   .global_header__inner{
     display:flex;
     flex-wrap: wrap;

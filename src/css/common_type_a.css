@@ -1,0 +1,76 @@
+@simple-mixin-define font_bebas {
+  font-family: "bebas_neue_regularregular";
+  letter-spacing: 0.15rem;
+  font-weight:bold;
+}
+
+
+*{
+  appearance: none;
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  font-size:62.5%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+body{
+  font-size:1.2rem;
+  background: #000;
+  color:#fff;
+  margin:0;
+  font-family:sans-serif;
+}
+a,input,button{
+  color:#000;
+  text-decoration: none;
+  -webkit-touch-callout:none;
+  -webkit-tap-highlight-color:(0,0,0,0);
+  &:hover{
+    opacity: .8;
+    text-decoration: none;
+    
+  }
+}
+p{
+  font-size:1.5rem;
+  line-height:1.8;
+}
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+select::-ms-expand {
+  display: none;
+}
+.container{
+  width:1020px;
+  margin:0 auto;
+}
+
+/* #body */
+
+:-moz-placeholder {
+    color:#666;
+  }
+::-webkit-input-placeholder {
+    color:#666;
+}
+
+.font_bebas {
+  font-family: "bebas_neue_regularregular";
+  letter-spacing: 0.15rem;
+  font-weight:bold;
+}
+
+/* ===============================================
+ * color
+ * =============================================== */
+.c_brand{
+  color:$brand-color;
+}
