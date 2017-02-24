@@ -20,7 +20,7 @@ html{
 }
 body{
   font-size:1.2rem;
-  background: #000;
+  background: #161616;
   color:#fff;
   margin:0;
   font-family:sans-serif;
@@ -44,6 +44,24 @@ select{
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+.select{
+  position:relative;
+  width:70px;
+  select{
+    background: transparent;
+    color:#666;
+    border:none;
+    padding-right:20px;
+    font-size:1.8rem;
+  }
+  .select__icon{
+   position:absolute;
+    right:0;
+    top:50%;
+    transform:translate(0,-50%);
+  }
+  
 }
 select::-ms-expand {
   display: none;
@@ -73,4 +91,18 @@ select::-ms-expand {
  * =============================================== */
 .c_brand{
   color:$brand-color;
+}
+
+/* ===============================================
+ * layout
+ * =============================================== */
+
+.l_align_l{
+  text-align: left;
+}
+.l_align_c{
+  text-align: center;
+}
+.l_align_r{
+  text-align: right;
 }

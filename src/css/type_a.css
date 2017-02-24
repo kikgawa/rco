@@ -1,4 +1,106 @@
 /* ===============================================
+ * global_header
+ * =============================================== */
+.global_header{
+  .global_header__top{
+    background: #000;
+    color:#fff;
+    min-width:1400px;
+    .global_header__top__row{
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      height:30px;
+      font-size:1rem;
+      padding:0 50px;
+      a{
+        display:inline-block;
+        margin:0 0 0 20px;
+        color:#fff;
+        &.unlink{
+          color:#666;
+        }
+      }
+    }
+  }
+  .global_navigation{
+    background: #161616;
+  }
+}
+.global_navigation{
+  min-width:1400px;
+  background: #000;
+  .global_navigation__row{
+    padding:0 50px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height:80px;
+  }
+  .global_navigation__right{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    
+    aside{
+      display:flex;
+      
+      .box{
+        margin-left:20px;
+        padding:5px 10px;
+        i{
+          margin-right:5px;
+          display:inline-block;
+          position:static;
+          font-size:1.5rem;
+          transform: inherit;
+        }
+      }
+    }
+  }
+  .global_navigation__left{
+    display:flex;
+    align-items:center;
+    .logo{
+      width:82px;
+      margin-right:70px;
+    }
+    .nav{
+      a{
+        display:inline-block;
+        margin-right:40px;
+        color:#666;
+        font-size:1.8rem;
+        height:80px;
+        line-height:79px;
+        i{
+          display:inline-block;
+          margin-left:5px;
+        }
+        &:hover{
+          color:#fff;
+          border-bottom:1px solid #fff;
+        }
+      }
+    }
+  }
+  
+}
+/* ===============================================
+ *  footer
+ * =============================================== */
+.global_footer{
+  background: #000;
+  color:#666;
+  text-align: center;
+  font-size:1rem;
+  line-height:50px;
+  height:50px;
+  border-top:1px solid $border-color;
+}
+/* ===============================================
  * layout
  * =============================================== */
 .l_row{
@@ -17,11 +119,12 @@
 
 .keyvisual{
   background:#000;
-  min-width:1px;
+  min-width:1000px;
   width:100%;
   background-size:cover;
   background-position:center top;
   height:490px;
+  margin-bottom:80px;
 }
 
 .title{
@@ -38,6 +141,7 @@
   }
 }
 
+
 /* ===============================================
  * section
  * =============================================== */
@@ -49,8 +153,129 @@
     font-weight:bold;
     margin-bottom:$mgb;
   }
+  h3{
+    font-size:1.8rem;
+  }
+  a{
+    color:$brand-color;
+    text-decoration: underline;
+  }
   p,img{
     margin-bottom:$mgb;
     display:inline-block;
   }
+  img{
+    max-width:100%;
+    height:auto;
+  }
+  dl{
+    dt{
+      color:$brand-color
+    }
+    dd{
+      line-height:1.6;
+      margin-bottom:10px;
+    }
+  }
+}
+
+.data_block{
+  .data_thumb{
+    margin-top:25px;
+    img{
+      margin-bottom:10px;
+    }
+  }
+  .sns_list{
+    margin:0 -5px 20px;
+    display: flex;
+  }
+  .sns{
+    padding:0 5px;
+    text-align: center;
+    width:33.3%;
+    height:40px;
+    line-height:40px;
+    a{
+      display:block;
+      color:#fff;
+      font-size:1.5rem;
+    }
+    &.sns--tw a{
+      background: $sns-twitter;
+    }
+    &.sns--fb a{
+      background: $sns-facebook;
+    }
+    &.sns--insta a{
+      background: $sns-instagram;
+    }
+    &.sns--grayout a{
+      background:#333;
+      color:#666;
+    }
+  }
+}
+.gallery_block{
+  .gallery_row{
+    display:flex;
+    flex-wrap: wrap;
+    margin:0 -5px;
+    .gallery_thumb{
+      width:33.3%;
+      padding:0 5px;
+      margin-bottom:10px;
+      img{
+        margin:0;
+        vertical-align: top;
+        &:hover{
+          opacity: .8;
+        }
+      }
+    }
+  }
+}
+.access_block{
+  img{
+    margin-bottom:20px;
+  }
+  p{
+    font-size:1.2rem;
+  }
+  
+}
+/* ===============================================
+ * aside
+ * =============================================== */
+aside.sec{
+  .title{
+    margin-bottom:20px;
+  }
+}
+
+/* ===============================================
+ * box
+ * =============================================== */
+.box{
+  padding:20px;
+  background:$brand-color;
+  color:#fff;
+  position:relative;
+  border:1px solid $brand-color;
+  width:100%;
+  min-width:180px;
+  i{
+    position:absolute;
+    top:50%;
+    left:20px;
+    font-size:2rem;
+    transform:translate(0,-50%);
+  }
+  .font_bebas{
+    font-size:1.8rem;
+  }
+}
+.box--c_black{
+  background: #000;
+  color: $brand-color;
 }

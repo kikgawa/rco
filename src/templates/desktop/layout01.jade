@@ -1,0 +1,57 @@
+extend ../layouts/layout
+block body
+  - var bodyclass = 'layout';
+  body(class=bodyclass)
+    - var header_class = 'global_header header--01';
+    include ../includes/_header_parts
+
+    #main_container
+      section.l_sec
+        .l_container
+          .m_card
+            .card_row
+              .card.card--01
+                a(href="")
+                  .card__inner
+                    .card__thumb: img(src="../img/sample/4_3_01.jpg")
+                    .card__caption 滞在中レンタカー付！『サンキューチョイスプラン沖縄』
+                    .card__text ◎小田原発着だからこの価格！東京駅・品川駅・新横浜駅発着にも変更できます！
+              .card.card--01
+                a(href="")
+                  .card__inner
+                    .card__thumb: img(src="../img/sample/4_3_02.jpg")
+                    .card__caption 滞在中レンタカー付！『サンキューチョイスプラン沖縄』
+                    .card__text ◎小田原発着だからこの価格！東京駅・品川駅・新横浜駅発着にも変更できます！◎JR選択画面にて、ひかり号にも変更いただけます（選択 ...
+              .card.card--01
+                a(href="")
+                  .card__inner
+                    .card__thumb: img(src="../img/sample/4_3_03.jpg")
+                    .card__caption サンキューチョイスプラン沖縄
+                    .card__text ◎小田原発着だからこの価格！東京駅・品川駅・新横浜駅発着にも変更できます！
+
+      section.l_sec
+        .l_container
+          .m_card
+            .card_row
+              .card.card--01
+                a(href="")
+                  .card__inner
+                    .card__thumb: img(src="../img/sample/4_3_01.jpg")
+                    .card__caption 滞在中レンタカー付！『サンキューチョイスプラン沖縄』
+                    .card__text ◎小田原発着だからこの価格！東京駅・品川駅・新横浜駅発着にも変更できます！
+              .card.card--01
+                a(href="")
+                  .card__inner
+                    .card__thumb: img(src="../img/sample/4_3_02.jpg")
+                    .card__caption 滞在中レンタカー付！『サンキューチョイスプラン沖縄』
+                    .card__text ◎小田原発着だからこの価格！東京駅・品川駅・新横浜駅発着にも変更できます！◎JR選択画面にて、ひかり号にも変更いただけます（選択 ...
+              .card.card--01
+                a(href="")
+                  .card__inner
+                    .card__thumb: img(src="../img/sample/4_3_03.jpg")
+                    .card__caption サンキューチョイスプラン沖縄
+                    .card__text ◎小田原発着だからこの価格！東京駅・品川駅・新横浜駅発着にも変更できます！
+
+
+    include ../includes/_footer
+    include ../includes/_js

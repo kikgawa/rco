@@ -2,6 +2,46 @@ extend ../layouts/layout_type_a
 block body
   - var bodyclass = 'a_001';
   body(class=bodyclass)
+    .global_header
+      .global_header__top
+        .global_header__top__row
+          .global_header__top__left
+            | 神戸のホテルなら神戸メリケンパークオリエンタルホテル
+          .global_header__top__right
+            a(href="") Twitter
+            a(href="") Facebook
+            a.unlink(href="javascript:void(0);") Instagram
+      .global_navigation
+        .global_navigation__row
+          .global_navigation__left
+            .logo
+              a(href="")
+                img(src="../img/a_001/logo.png")
+            nav.nav.font_bebas
+              a(href="") ABOUT
+              a(href="") RESTAURANT
+              a(href="") ROOM
+              a(href="") BATH
+              a(href="") FACILITY
+              a(href="") AMENITY
+              a(href="")
+                | NES
+                i.icons8-external-link
+          .global_navigation__right
+            .select
+              select.font_bebas
+                option ENGLISH
+                option 日本語
+              .select__icon
+                i.icons8-expand-arrow
+            aside
+              .box.box--c_black.l_align_c
+                i.icons8-phone-filled
+                span.font_bebas RESERVATION
+              .box.box--c_brand.l_align_c
+                i.icons8-phone-filled
+                span.font_bebas 078-849-3107
+
     .keyvisual(style="background-image:url(../img/a_001/keyvisual.jpg);")
 
     .container
@@ -24,7 +64,174 @@ block body
               | 世界で最も有名で希少な「神戸牛」を、リーズナブルなプレミアムワイン・シャンパーニュと共に
             p 神戸牛は、日本原種の黒毛和牛の中でも頂点とされている但馬牛で、但馬の血統の中でも肉質や重量制限などの厳しい条件を満たしたものだけが神戸牛として認定される。日本一厳しい条件をクリアした神戸牛の年間頭数は極僅かで、とても希少な和牛といえる。世界9大高級食材として、トリュフやキャビアと同格に位置するほどハイブランドな牛肉なのだ。「RRR Kobe Beef Steak（トリプルアール　神戸牛ステーキ）」では、ぜひとも自慢の「25日熟成最高級神戸牛炭火グリル」を食していただきたい。
             img(src="../img/a_001/restaurant.jpg")
+          section.sec
+            .title
+              .title__inner ROOM
+            h2
+              | 国内でも数少ない「日本ホテル機構推進観光ホテル」の認定を受け、世界で最も希少なお部屋を提供。
+            img(src="../img/a_001/room_01.jpg")
+            p 神戸牛は、日本原種の黒毛和牛の中でも頂点とされている但馬牛で、但馬の血統の中でも肉質や重量制限などの厳しい条件を満たしたものだけが神戸牛として認定される。日本一厳しい条件をクリアした神戸牛の年間頭数は極僅かで、とても希少な和牛といえる。世界9大高級食材として、トリュフやキャビアと同格に位置するほどハイブランドな牛肉なのだ。「RRR Kobe Beef Steak（トリプルアール　神戸牛ステーキ）」では、ぜひとも自慢の「25日熟成最高級神戸牛炭火グリル」を食していただきたい。
+            img(src="../img/a_001/room_02.jpg")
+
+          section.sec
+            .title
+              .title__inner FACILITY
+            p レストラン ／ ティーラウンジ ／ スカイラウンジ ／ 宴会場 ／ 会議室 ／ 結婚式場 ／ 禁煙ルーム ／ 売店 ／ 美容院 ／ 貸自転車 ／ コネクティングルーム（一部・要予約） ／ 送迎バスクリーニングサービス ／ パソコン利用可ルーム ／ サービスマッサージ ／ サービスモーニングコール ／ 宅配便
+
+          section.sec
+            .title
+              .title__inner AMENITY
+            p テレビ有料ビデオ衛星放送（無料） ／ 電話インターネット接続（LAN形式） ／ インターネット接続（無線LAN形式） ／ 湯沸かしポット ／ 冷蔵庫 ／ ドライヤー ／ ズボンプレッ サー(貸出) ／ 電気スタンド(貸出) ／ アイロン(貸出) ／ 加湿器洗浄機付トイレ ／ 石鹸（液体） ／ ボディーソープ ／ シャンプー ／ リンス ／ ハミガキセット ／ カミソリブラシ ／ オル ／ バスタオル ／ スリッパ ／ パジャマ
         .l_row__side
+          aside.sec
+            .title
+              .title__inner TEL
+            .box.box--c_brand.l_align_c
+              i.icons8-phone-filled
+              span.font_bebas 078-849-3107
+
+          aside.sec
+            .title
+              .title__inner DATA
+            .data_block
+               h3 神戸メリケンパークオリエンタル
+               a(href="") 兵庫県
+               a(href="") 神戸市
+               span /
+               a(href="") 三宮・元町
+               .data_thumb
+                 img(src="../img/a_001/data_01.jpg")
+               .sns_list
+                 .sns.sns--tw
+                   a(href="")
+                    i.icons8-twitter-filled
+                 .sns.sns--fb
+                   a(href="")
+                     i.icons8-facebook-filled
+                 .sns.sns--insta.sns--grayout
+                   a(href="javascript:void(0);")
+                     i.icons8-instagram-filled
+            dl
+               dt 所在地
+               dd
+                | 〒650-0042
+                br
+                | 神戸市中央区波止場町5-6陽光
+                br
+                | JR・阪急・阪神・地下鉄「三宮」駅より、お車で約8分
+
+               dt 営業時間
+               dd
+                | 平日　：18:00~24:00
+                br
+                | 土日祝：19:00~27:00
+               dt チェックイン
+               dd 14:00（最終チェックイン：29:30）
+               dt チェックアウト
+               dd 11:00
+               dt ご利用可能カード
+               dd VISA ／ JCB ／ American Express ／ Diner's Club ／ UCDCNICOSOMC ／ UFJ Card ／ Master Card ／ O RICO
 
 
+          aside.sec
+            .title
+              .title__inner GALLERY
+            .gallery_block
+              .gallery_row
+                .gallery_thumb
+                  a(href="")
+                    img(src="../img/a_001/gallery_01.jpg")
+                .gallery_thumb
+                  a(href="")
+                    img(src="../img/a_001/gallery_02.jpg")
+                .gallery_thumb
+                  a(href="")
+                    img(src="../img/a_001/gallery_03.jpg")
+                .gallery_thumb
+                  a(href="")
+                    img(src="../img/a_001/gallery_04.jpg")
+                .gallery_thumb
+                  a(href="")
+                    img(src="../img/a_001/gallery_05.jpg")
+                .gallery_thumb
+                  a(href="")
+                    img(src="../img/a_001/gallery_06.jpg")
+                .gallery_thumb
+                  a(href="")
+                    img(src="../img/a_001/gallery_07.jpg")
+                .gallery_thumb
+                  a(href="")
+                    img(src="../img/a_001/gallery_08.jpg")
+                .gallery_thumb
+                  a(href="")
+                    img(src="../img/a_001/gallery_09.jpg")
+          aside.sec
+            .title
+              .title__inner ACCESS
+            .access_block
+              .access_map
+                img(src="../img/a_001/map.jpg")
+              .access_detail
+                p
+                  | 新幹線「新神戸」駅より、お車で約13分
+                  br
+                  | JR「神戸」駅より、お車で約5分
+                  br
+                  | JR・阪急・阪神・地下鉄「三宮」駅より、お車で約8分
+                  br
+                  | JR・阪神「元町」駅より、徒歩約15分
+                  br
+                  | 地下鉄海岸線「みなと元町」駅出口2番より、徒歩約8分
+                a(href="") Google Map
+          aside.sec
+            .title
+              .title__inner OTHER
+            dl
+              dt 条件・注意事項
+              dd
+                | 現地決済ご希望のお客様は、ご到着時にカードもしくは現金にてご精算いただきます。(※事前カード決済のみのプランにつきましては、こちらのご案内は対象外でございます)
+                br
+                | ご到着時間が22時を過ぎるようでしたらホテルまでご連絡ください。
+              dt キャンセルポリシー
+              dd
+                | キャンセル料は以下の通り頂戴いたします。
+                br
+                | 当日　　　　　　　　：宿泊料金の８０％　
+                br
+                | 前日　　　　　　　　：宿泊料金の２０％　
+                br
+                | ※宿泊プランや日毎に、別途キャンセルポリシーが設定されている場合があります。プラン詳細ページ（空室カレンダー横等）と【予約手続画面（予約step）】にて必ずキャンセルポリシーをご確認ください。
+
+    .global_navigation
+      .global_navigation__row
+        .global_navigation__left
+          .logo
+            a(href="")
+              img(src="../img/a_001/logo.png")
+          nav.nav.font_bebas
+            a(href="") ABOUT
+            a(href="") RESTAURANT
+            a(href="") ROOM
+            a(href="") BATH
+            a(href="") FACILITY
+            a(href="") AMENITY
+            a(href="")
+              | NES
+              i.icons8-external-link
+        .global_navigation__right
+          .select
+            select.font_bebas
+              option ENGLISH
+              option 日本語
+            .select__icon
+              i.icons8-expand-arrow
+          aside
+            .box.box--c_black.l_align_c
+              i.icons8-phone-filled
+              span.font_bebas RESERVATION
+            .box.box--c_brand.l_align_c
+              i.icons8-phone-filled
+              span.font_bebas 078-849-3107
+    .global_footer
+      | COPYRIGHT. KOBE MERIKEN PARK ORIENTAL HOTEL.LTD.
     include ../includes/_js
