@@ -22,8 +22,24 @@
   }
 }
 
+.layout--01{
+  .l_sec{
+    padding:100px 0 0;
+    background: #fff;
+    &:last-child{
+      padding-bottom:100px;
+    }
+  }
+}
 .layout--02{
   background: #666;
+  .l_sec{
+    padding:100px 0 0;
+    background: #fff;
+    &:last-child{
+      padding-bottom:100px;
+    }
+  }
 }
 .layout--03{
   background: #fff;
