@@ -1,0 +1,46 @@
+/* ===============================================
+ * news
+ * =============================================== */
+
+.news{
+  font-size: 1rem;
+  font-weight:bold;
+  height:50px;
+  background: #000;
+  .l_container{
+    width:825px;
+    margin:0 auto;
+    position:relative;
+    
+  }
+  .news_block{
+    text-align: center;
+    line-height:50px;
+    span{
+      display:inline-block;
+      margin-right:10px;
+    }
+    .time{
+      color:#999999;
+    }
+    a{
+      text-decoration: underline;
+    }
+  }
+  .news_arrow{
+    position:absolute;
+    top:0;
+    height:50px;
+    width:50px;
+    background: #000;
+    color:#fff;
+    border:none;
+    cursor: pointer;
+  }
+  .news_prev{
+    left:0;
+  }
+  .news_next{
+    right:0;
+  }
+}

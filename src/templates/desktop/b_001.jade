@@ -1,0 +1,356 @@
+extend ../layouts/layout_pattern
+
+block body
+  - var bodyclass = 'b_001';
+  body(class=bodyclass)
+    .global_header
+      .global_header__top.l_align_c
+        .logo
+          a(href="")
+            img(src="../img/a_001/logo.png")
+        | グランドハイアット東京｜東京の中心地六本木のラグジュアリーホテル
+      .global_navigation
+        nav.nav.font_bebas
+          a(href="") 当ホテルについて
+          a(href="") レストラン
+          a(href="") 客室
+          a(href="") 設備・アメニティ
+          a(href="")
+            | 日本語
+            i.icons8-expand-arrow
+          a(href="") ホテルのご予約
+          i.icons8-phone-filled
+            span.font_bebas 078-849-3107
+
+    .keyvisual_slide_container
+      .keyvisual_slide
+        .keyvisual_slide__block
+          .keyvisual_slide__img(style="background-image:url(../img/b_001/keyvisual_01.jpg);")
+          .keyvisual_slide__cap
+            .cap_title SPECIAL ROOM
+            .cap_text ランドマークである六本木ヒルズを眺めるラグジュアリーなデスティネーションルーム
+        .keyvisual_slide__block
+          .keyvisual_slide__img(style="background-image:url(../img/b_001/keyvisual_02.jpg);")
+          .keyvisual_slide__cap
+            .cap_title SPECIAL ROOM
+            .cap_text ランドマークである六本木ヒルズを眺めるラグジュアリーなデスティネーションルーム
+        .keyvisual_slide__block
+          .keyvisual_slide__img(style="background-image:url(../img/b_001/keyvisual_03.jpg);")
+          .keyvisual_slide__cap
+            .cap_title SPECIAL ROOM
+            .cap_text ランドマークである六本木ヒルズを眺めるラグジュアリーなデスティネーションルーム
+
+    .news
+      .l_container
+        .news_block
+          span.time 2017.02.19 /
+          span.text: a(href="") 世界中のハイアットホテルズ アンドリゾーツの最新情報をお届けします。ご希望の方は是非ご登録ください。
+        button.news_prev.news_arrow
+          i.icons8-back
+        button.news_next.news_arrow
+          i.icons8-forward
+
+
+
+
+
+
+
+    section.sec
+      .sec__header.sec_text_set
+        .container
+          h2.l_align_c
+            span 東京
+            | GRAND HYATT TOKYO
+            br
+            | LUXURY HOTEL & ACCOMMODATION ROPPONGI
+          p.l_align_c
+           | ビジネス、文化、グルメ、ファッションなどが集まる国際色豊かな港区・六本木に位置し、
+           br
+           | ランドマークである六本木ヒルズに直結した
+           br
+           | ラグジュアリーなライフスタイルデスティネーションホテルです。
+          .btn_row
+            .btn.btn--black ホテルのご予約
+      .sec__body
+        .container
+          .m_card.l_align_c
+            .card_row
+              .card.card--02
+                a(href="")
+                  .card__inner
+                    .card__thumb: img(src="../img/b_001/gallery_01.jpg")
+                    .card__caption スイートルーム
+                    .card__text 記念日などの特別な日にご利用ください
+              .card.card--02
+                a(href="")
+                  .card__inner
+                    .card__thumb: img(src="../img/b_001/gallery_02.jpg")
+                    .card__caption お部屋からの眺め
+                    .card__text 日本一を誇る東京の絶景を眺めることができます
+              .card.card--02
+                a(href="")
+                  .card__inner
+                    .card__thumb: img(src="../img/b_001/gallery_03.jpg")
+                    .card__caption お部屋からの眺め
+                    .card__text 日本一を誇る東京の絶景を眺めることができます
+              .card.card--02
+                a(href="")
+                  .card__inner
+                    .card__thumb: img(src="../img/b_001/gallery_04.jpg")
+                    .card__caption レストラン（ビアンカ）
+                    .card__text 会食にも使える日本食専門のレストランです
+              .card.card--02
+                a(href="")
+                  .card__inner
+                    .card__thumb: img(src="../img/b_001/gallery_05.jpg")
+                    .card__caption ビア・レストラン
+                    .card__text 夜の東京を360°見渡せる自慢のビアです
+              .card.card--02
+                a(href="")
+                  .card__inner
+                    .card__thumb: img(src="../img/b_001/gallery_06.jpg")
+                    .card__caption レストラン（礼華）
+                    .card__text 夜景と一緒に５つ星の料理をお楽しみください
+
+
+    section.sec
+      .sec__header.sec_text_set
+        h2.l_align_c
+          span   レストラン
+          | RESTAURANT
+        p.l_align_c
+          | ビジネス、文化、グルメ、ファッションなどが集まる国際色豊かな港区・六本木に位置し、
+          br
+          | ランドマークである六本木ヒルズに直結した
+          br
+          | ラグジュアリーなライフスタイルデスティネーションホテルです。
+        .btn_row
+          .btn.btn--black.font_bebas
+            i.icons8-phone-filled
+            | 078-849-3107
+      .sec__body
+        .container
+          .card_list
+            .card
+              .card__thumb
+                img(src="../img/b_001/img_01.jpg")
+              .card__detail
+                .sec_text_set
+                  h2
+                    span 東京
+                    | GRAND HYATT TOKYO
+                    br
+                    | LUXURY HOTEL & ACCOMMODATION ROPPONGI
+                  p
+                    | ビジネス、文化、グルメ、ファッションなどが集まる国際色豊かな港区・六本木に位置し、ランドマークである六本木ヒルズに直結したラグジュアリーなライフスタイルデスティネーションホテルです。
+            .card
+              .card__thumb
+                img(src="../img/b_001/img_02.jpg")
+              .card__detail
+                .sec_text_set
+                  h2
+                    span 東京
+                    | GRAND HYATT TOKYO
+                    br
+                    | LUXURY HOTEL & ACCOMMODATION ROPPONGI
+                  p
+                    | ビジネス、文化、グルメ、ファッションなどが集まる国際色豊かな港区・六本木に位置し、ランドマークである六本木ヒルズに直結したラグジュアリーなライフスタイルデスティネーションホテルです。
+            .card
+              .card__thumb
+                img(src="../img/b_001/img_03.jpg")
+              .card__detail
+                .sec_text_set
+                  h2
+                    span 東京
+                    | GRAND HYATT TOKYO
+                    br
+                    | LUXURY HOTEL & ACCOMMODATION ROPPONGI
+                  p
+                    | ビジネス、文化、グルメ、ファッションなどが集まる国際色豊かな港区・六本木に位置し、ランドマークである六本木ヒルズに直結したラグジュアリーなライフスタイルデスティネーションホテルです。
+            .card
+              .card__thumb
+                img(src="../img/b_001/img_04.jpg")
+              .card__detail
+                .sec_text_set
+                  h2
+                    span 東京
+                    | GRAND HYATT TOKYO
+                    br
+                    | LUXURY HOTEL & ACCOMMODATION ROPPONGI
+                  p
+                    | ビジネス、文化、グルメ、ファッションなどが集まる国際色豊かな港区・六本木に位置し、ランドマークである六本木ヒルズに直結したラグジュアリーなライフスタイルデスティネーションホテルです。
+            .card
+              .card__thumb
+                img(src="../img/b_001/img_05.jpg")
+              .card__detail
+                .sec_text_set
+                  h2
+                    span 東京
+                    | GRAND HYATT TOKYO
+                    br
+                    | LUXURY HOTEL & ACCOMMODATION ROPPONGI
+                  p
+                    | ビジネス、文化、グルメ、ファッションなどが集まる国際色豊かな港区・六本木に位置し、ランドマークである六本木ヒルズに直結したラグジュアリーなライフスタイルデスティネーションホテルです。
+    section.sec
+      .sec__header.sec_text_set
+        h2.l_align_c
+          span 客室
+          | ROOM
+        p.l_align_c
+          | ビジネス、文化、グルメ、ファッションなどが集まる国際色豊かな港区・六本木に位置し、
+          br
+          | ランドマークである六本木ヒルズに直結した
+          br
+          | ラグジュアリーなライフスタイルデスティネーションホテルです。
+        .btn_row
+          .btn.btn--black ホテルのご予約
+      .keyvisual_slide_container
+        .keyvisual_slide
+          .keyvisual_slide__block
+            .keyvisual_slide__img(style="background-image:url(../img/b_001/keyvisual_04.jpg);")
+            .keyvisual_slide__cap.keyvisual_slide__cap--bottom
+              .cap_title SPECIAL ROOM
+              .cap_text ランドマークである六本木ヒルズを眺めるラグジュアリーなデスティネーションルーム
+          .keyvisual_slide__block
+            .keyvisual_slide__img(style="background-image:url(../img/b_001/keyvisual_05.jpg);")
+            .keyvisual_slide__cap.keyvisual_slide__cap--bottom
+              .cap_title SPECIAL ROOM
+              .cap_text ランドマークである六本木ヒルズを眺めるラグジュアリーなデスティネーションルーム
+          .keyvisual_slide__block
+            .keyvisual_slide__img(style="background-image:url(../img/b_001/keyvisual_06.jpg);")
+            .keyvisual_slide__cap.keyvisual_slide__cap--bottom
+              .cap_title SPECIAL ROOM
+              .cap_text ランドマークである六本木ヒルズを眺めるラグジュアリーなデスティネーションルーム
+
+    section.sec
+      .sec__header.sec_text_set
+        h2.l_align_c
+          span 設備・アメニティ
+          | FACILITY&AMENITIES
+        p.l_align_c
+          | ビジネス、文化、グルメ、ファッションなどが集まる国際色豊かな港区・六本木に位置し、
+          br
+          | ランドマークである六本木ヒルズに直結した
+          br
+          | ラグジュアリーなライフスタイルデスティネーションホテルです。
+      .tab_ui
+        .tab_nav
+          ul
+            li.current: a(href="") スイートルーム
+            li: a(href="") グランドエグゼクティブツイン
+            li: a(href="") エグゼクティブツイン
+            li: a(href="") ビジネス
+        .tab_content
+          .container
+            ul.list_check
+              li
+                .list_check__left
+                  .circle
+                .list_check__right
+                  | 32” フラットスクリーンテレビ
+              li
+                .list_check__left
+                  .circle
+                .list_check__right
+                  | 電話2回線
+              li
+                .list_check__left
+                  .circle
+                .list_check__right
+                  | ラップトップ充電対応型セイフティボックス
+              li
+                .list_check__left
+                  .circle
+                .list_check__right
+                  | 空調設備
+              li
+                .list_check__left
+                  .circle
+                .list_check__right
+                  | 13” フラットスクリーンテレビ(バスルーム)
+              li
+                .list_check__left
+                  .circle
+                .list_check__right
+                  | DVD / CD プレーヤー
+              li
+                .list_check__left
+                  .circle
+                .list_check__right
+                  | 32” フラットスクリーンテレビ
+              li
+                .list_check__left
+                  .circle
+                .list_check__right
+                  | 電話2回線
+              li
+                .list_check__left
+                  .circle
+                .list_check__right
+                  | ラップトップ充電対応型セイフティボックス
+              li
+                .list_check__left
+                  .circle
+                .list_check__right
+                  | 空調設備
+              li
+                .list_check__left
+                  .circle
+                .list_check__right
+                  | 13” フラットスクリーンテレビ(バスルーム)
+
+
+    section.sec
+      .sec__header.sec_text_set
+        h2.l_align_c
+          span お問い合わせ・ご予約
+          | GRAND HYATT TOKYO
+          br
+          | LUXURY HOTEL & ACCOMMODATION ROPPONGI
+        p.l_align_c
+          | ホテル専用有料駐車場 P3（バレー式機械駐車場200台）
+          br
+          | 東京メトロ 日比谷線・都営地下鉄 大江戸線「六本木駅」1C番出口より徒歩3分
+          br
+          |  チェックイン：15:00 ／ チェックアウト：12:00
+        .btn_row
+          .btn.btn--black ホテルのご予約
+          .btn.btn--black.font_bebas
+            i.icons8-phone-filled
+            | 078-849-3107
+    .global_footer
+      .container
+        .footer_inner
+          .footer_left
+            .logo
+              a(href="")
+                img(src="../img/a_001/logo.png")
+          .footer_right
+            nav.nav.font_bebas
+              a(href="") 当ホテルについて
+              a(href="") レストラン
+              a(href="") 客室
+              a(href="") 設備・アメニティ
+              a(href="")
+                | 日本語
+                i.icons8-expand-arrow
+              a(href="") ホテルのご予約
+              i.icons8-phone-filled
+                span.font_bebas 078-849-3107
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    script.
+      $(document).ready(function () {
+        $('.keyvisual_slide').slick({
+          centerMode: true,
+
+          slidesToShow: 1,
+          variableWidth: true,
+          prevArrow:'<button class="slick-prev"><i class="icons8-back"></i></button>',
+          nextArrow:'<button class="slick-next"><i class="icons8-forward"></i></button>'
+        });
+      });
+

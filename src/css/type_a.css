@@ -117,15 +117,6 @@
 
 
 
-.keyvisual{
-  background:#000;
-  min-width:1000px;
-  width:100%;
-  background-size:cover;
-  background-position:center top;
-  height:490px;
-  margin-bottom:80px;
-}
 
 .title{
   border-bottom:1px solid $border-color;
