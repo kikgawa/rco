@@ -127,12 +127,8 @@
  * btn
  * =============================================== */
 .b_001{
-  .btn_row{
-    display:flex;
-    justify-content: center;
-  }
   .btn{
-    background: #000;
+    background: $typeb-btn-color;
     color:#fff;
     font-size:1.2rem;
     min-height:50px;
