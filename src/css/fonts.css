@@ -15,12 +15,12 @@
 
 @font-face {
   font-family: "rco";
-  src: url("../fonts/rco_e0c898da63788b1dffc16b413b8f4f4f.eot");
-  src: url("../fonts/rco_e0c898da63788b1dffc16b413b8f4f4f.eot?#iefix") format("embedded-opentype"),
-       url("../fonts/rco_e0c898da63788b1dffc16b413b8f4f4f.woff2") format("woff2"),
-       url("../fonts/rco_e0c898da63788b1dffc16b413b8f4f4f.woff") format("woff"),
-       url("../fonts/rco_e0c898da63788b1dffc16b413b8f4f4f.ttf") format("truetype"),
-       url("../fonts/rco_e0c898da63788b1dffc16b413b8f4f4f.svg#rco") format("svg");
+  src: url("../fonts/rco_3cca92a56c5d2de30f0f5174977cfd34.eot");
+  src: url("../fonts/rco_3cca92a56c5d2de30f0f5174977cfd34.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/rco_3cca92a56c5d2de30f0f5174977cfd34.woff2") format("woff2"),
+       url("../fonts/rco_3cca92a56c5d2de30f0f5174977cfd34.woff") format("woff"),
+       url("../fonts/rco_3cca92a56c5d2de30f0f5174977cfd34.ttf") format("truetype"),
+       url("../fonts/rco_3cca92a56c5d2de30f0f5174977cfd34.svg#rco") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -28,23 +28,29 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "rco";
-    src: url("../fonts/rco_e0c898da63788b1dffc16b413b8f4f4f.svg#rco") format("svg");
+    src: url("../fonts/rco_3cca92a56c5d2de30f0f5174977cfd34.svg#rco") format("svg");
   }
 }
 
 [data-icons8]:before { content: attr(data-icons8); }
 
-[data-icons8]:before,
+.icons8, [data-icons8]:before,
 .icons8-back:before,
+.icons8-bed-filled:before,
 .icons8-collapse-arrow:before,
+.icons8-edit-property-filled:before,
 .icons8-expand-arrow:before,
 .icons8-external-link:before,
 .icons8-facebook:before,
 .icons8-facebook-filled:before,
 .icons8-forward:before,
+.icons8-help-filled:before,
+.icons8-hotel-changing-room-filled:before,
 .icons8-instagram:before,
 .icons8-instagram-filled:before,
+.icons8-marker-filled:before,
 .icons8-phone-filled:before,
+.icons8-restaurant-filled:before,
 .icons8-system-information-filled:before,
 .icons8-twitter:before,
 .icons8-twitter-filled:before {
@@ -63,15 +69,21 @@
 }
 
 .icons8-back:before { content: "\f103"; }
+.icons8-bed-filled:before { content: "\f115"; }
 .icons8-collapse-arrow:before { content: "\f101"; }
+.icons8-edit-property-filled:before { content: "\f112"; }
 .icons8-expand-arrow:before { content: "\f100"; }
 .icons8-external-link:before { content: "\f10a"; }
 .icons8-facebook:before { content: "\f10e"; }
 .icons8-facebook-filled:before { content: "\f10d"; }
 .icons8-forward:before { content: "\f102"; }
+.icons8-help-filled:before { content: "\f113"; }
+.icons8-hotel-changing-room-filled:before { content: "\f116"; }
 .icons8-instagram:before { content: "\f110"; }
 .icons8-instagram-filled:before { content: "\f10f"; }
+.icons8-marker-filled:before { content: "\f117"; }
 .icons8-phone-filled:before { content: "\f104"; }
+.icons8-restaurant-filled:before { content: "\f114"; }
 .icons8-system-information-filled:before { content: "\f109"; }
 .icons8-twitter:before { content: "\f10c"; }
 .icons8-twitter-filled:before { content: "\f10b"; }
